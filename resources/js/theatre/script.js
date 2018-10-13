@@ -14,9 +14,9 @@ $(document).ready(function () {
         if(name != '' && phoneNumber != "" && email != '' ){
             let data = {'name': name, 'phoneNumber': phoneNumber, "email": email};
             $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
+                //headers: {
+                //    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                //},
                 url: url,
                 type: 'PUT',
                 data: data,

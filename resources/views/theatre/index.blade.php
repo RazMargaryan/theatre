@@ -1,6 +1,5 @@
 @extends('theatre.site');
 
-
 @section('content')
-    @include('site.content')
+    @include('theatre.content')
 @endsection

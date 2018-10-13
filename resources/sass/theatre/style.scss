@@ -1,12 +1,14 @@
 body {
   background-image: url("/theatre/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position:center center;
   .ticketArea{
-    margin: 55px auto;
-    width: 60%;
+    margin: 40px auto;
+    width: 885px;
     .content{
       width: 100%;
       overflow: hidden;
-      padding: 100px 0;
       .tickets{
         width:70px;
         height: 70px;

@@ -36,9 +36,6 @@
                         <small class="errorEmail"></small>
                         <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email *">
                     </div>
-                    @csrf
-
-
                 </form>
             </div>
             <div class="modal-footer">

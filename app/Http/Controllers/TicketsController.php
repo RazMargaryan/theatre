@@ -14,7 +14,7 @@ class TicketsController extends Controller
      */
     public function index()
     {
-        return view('site.index', array(
+        return view('theatre.index', array(
             'tickets' => Tickets::select('id', 'phone_number as selected')->get()->toArray()
         ));
     }

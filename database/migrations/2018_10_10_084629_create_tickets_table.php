@@ -18,7 +18,7 @@ class CreateTicketsTable extends Migration
             $table-> string('user_name', 100)->nullable();
             $table-> string('phone_number', 100)->nullable();
             $table-> string('email', 100)->nullable();
-            $table->timdestamps();
+            $table->timestamps();
         });
     }
 
