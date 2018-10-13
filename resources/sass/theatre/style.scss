@@ -1,0 +1,54 @@
+body {
+  background-image: url("/theatre/img/bg.jpg");
+  .ticketArea{
+    margin: 55px auto;
+    width: 60%;
+    .content{
+      width: 100%;
+      overflow: hidden;
+      padding: 100px 0;
+      .tickets{
+        width:70px;
+        height: 70px;
+        float: left;
+        margin: 0 0 12px 18px;
+        font-size:15px;
+        padding-top: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgba(207, 206, 222, 1);
+
+      }
+      .free {
+        background-color: rgba(17, 145, 250, 1);
+      }
+
+      .free:hover {
+        background-color: #120af5;
+      }
+
+      .selected {
+        background-color: red;
+      }
+    }
+  }
+  small{
+    display: block;
+    color:red;
+  }
+  .popup{
+    position: absolute;
+    display: none;
+    top: 25%;
+    left: 30%;
+    width: 600px;
+    height: 450px;
+    background-color: #2a9055;
+  }
+}
+
+
+
+
+
+
