@@ -14,9 +14,9 @@ $(document).ready(function () {
         if(name != '' && phoneNumber != "" && email != '' ){
             let data = {'name': name, 'phoneNumber': phoneNumber, "email": email};
             $.ajax({
-                //headers: {
-                //    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                //},
+                headers: {
+                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
                 url: url,
                 type: 'PUT',
                 data: data,
@@ -32,7 +32,9 @@ $(document).ready(function () {
                         alert(success.message);
                     }, 1000);
                 },error: function(xhr) {
+                    console.log(xhr);
                     let error = xhr.responseJSON.errors;
+                    console.log(error);
                     if(error.name) $('.errorName').text(error.name[0]);
                     else $('.errorName').css('display', 'none');
                     if(error.phoneNumber) $('.errorNumber').text(error.phoneNumber[0]);

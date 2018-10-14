@@ -1,14 +1,13 @@
 body {
   background-image: url("/theatre/img/bg.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position:center center;
+  background-size: cover;
+  background-position:top;
   .ticketArea{
-    margin: 40px auto;
-    width: 885px;
+    margin: 12% auto;
+    width: 890px;
     .content{
       width: 100%;
-      overflow: hidden;
       .tickets{
         width:70px;
         height: 70px;
@@ -51,6 +50,69 @@ body {
 
 
 
+@media only screen and (min-width: 1300px) and (max-width: 1500px){
+  body {
+    .ticketArea {
+        width: 780px;
+      .content {
+        width: 100%;
+        margin-left: 10px;
+        .tickets {
+          width: 60px;
+          height: 60px;
+          margin: 0 0 10px 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1300px) {
+  body {
+    .ticketArea {
+      width: 750px;
+      .content {
+        width: 100%;
+        margin-left: 27px;
+        .tickets {
+          width: 51px;
+          height: 51px;
 
-
-
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1150px) {
+  body {
+    .ticketArea {
+      width: 570px;
+      .content {
+        width: 100%;
+        margin-left: 23px;
+        .tickets {
+          width: 38px;
+          height: 38px;
+          margin: 0 0 10px 14px;
+          font-size:13px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px){
+  body {
+    .ticketArea {
+      width: 500px;
+      .content {
+        margin-left: 4px;
+        .tickets {
+          width: 37px;
+          height: 35px;
+          margin: 0 0 10px 11px;
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+}

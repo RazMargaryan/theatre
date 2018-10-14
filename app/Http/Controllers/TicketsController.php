@@ -73,7 +73,7 @@ class TicketsController extends Controller
     {
 
         $request->validate([
-            'name'         => 'required|min:3|max:100',
+            'name'         => 'required|max:100',
             'email'        => 'email|required',
             'phoneNumber'  => 'required|numeric'
         ]);

@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', 'TicketsController@index')->name('tickets');
-Route::put('/tickets/{id}', 'TicketsController@update')->name('tickets.update');
+
+Route::middleware(['web'])->group(function (){
+    Route::get('/', 'TicketsController@index')->name('tickets');
+    Route::put('/tickets/{id}', 'TicketsController@update')->name('tickets.update');
+});
+
 
